@@ -1,0 +1,19 @@
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
+
+import argparse
+
+from kakasi_utils.kanwa import Kanwa
+
+
+if __name__ == '__main__':
+    parser = argparse.ArgumentParser(
+        description="Merge kakasi dictionary files")
+    parser.add_argument('mereged_dict',
+                        help="an output file name of merged dictionary")
+    parser.add_argument('dict', nargs='+',
+                        help="a input file name of dictionary")
+    args = parser.parse_args()
+
+    kanwa = Kanwa()
+    kanwa.merge(args.dict, args.mereged_dict)

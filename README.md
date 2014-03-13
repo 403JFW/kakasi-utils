@@ -15,12 +15,13 @@ kanwa.py
 * KAKASI
 
 ### 使い方
-1. 結合したいテキスト形式の辞書ファイルを用意します.  
+1. `pip install kakasi-utils`
+2. 結合したいテキスト形式の辞書ファイルを用意します.  
 KAKASI 標準の辞書は KAKASI のソースコード内に kakasidict として入っています.  
 独自の辞書を利用する場合は文字コード EUC-JP, 改行コード LF で作成します. 具体的な例は下の“テキスト形式の辞書の例”を参照してください.
-2. `./kanwa.py merged_kakasidict kakasidict mydict1 mydict2 ` を実行すると, kakasidict と mydict1, mydict2 の3つの辞書を結合して, merged_kakasidict という名前のファイルに出力されます.
-3. `mkkanwa kanwadict merged_kakasidict` を実行して, 結合したテキスト形式の辞書をバイナリ形式の辞書に変換します.
-4. 出力された kanwadict を適切な場所に配置して利用します.
+3. `pykanwa merged_kakasidict kakasidict mydict1 mydict2 ` を実行すると, kakasidict と mydict1, mydict2 の3つの辞書を結合して, merged_kakasidict という名前のファイルに出力されます.
+4. `mkkanwa kanwadict merged_kakasidict` を実行して, 結合したテキスト形式の辞書をバイナリ形式の辞書に変換します.
+5. 出力された kanwadict を適切な場所に配置して利用します.
 
 ### テキスト形式の辞書の例
 ```
