@@ -1,5 +1,8 @@
 kakasi-utils
 ============
+
+[![PyPI version](https://badge.fury.io/py/kakasi-utils.png)](http://badge.fury.io/py/kakasi-utils)
+
 [KAKASI 漢字→かな(ローマ字)変換プログラム](http://kakasi.namazu.org) をより便利使うためのユーティリティ.
 
 kanwa.py
