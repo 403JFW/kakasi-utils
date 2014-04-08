@@ -1,6 +1,9 @@
 #!/usr/bin/env python
 
-from distutils.core import setup
+try:
+    from setuptools import setup
+except:
+    from distutils.core import setup
 
 
 setup(name='kakasi-utils',
@@ -11,6 +14,7 @@ setup(name='kakasi-utils',
       url='https://github.com/403JFW/kakasi-utils',
       packages=['kakasi_utils'],
       scripts=['scripts/pykanwa'],
+      test_suite='tests',
       classifiers=[
           'Development Status :: 3 - Alpha',
           'Environment :: Console',
