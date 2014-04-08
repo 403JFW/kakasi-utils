@@ -7,7 +7,7 @@ except:
 
 
 setup(name='kakasi-utils',
-      version='0.1',
+      version='0.1.1',
       description='KAKASI Utilities',
       author='Yusuke Miyazaki',
       author_email='miyazaki.dev@gmail.com',
@@ -24,6 +24,9 @@ setup(name='kakasi-utils',
           'Operating System :: POSIX',
           'Operating System :: Unix',
           'Programming Language :: Python',
+          'Programming Language :: Python :: 2',
+          'Programming Language :: Python :: 2.7',
           'Programming Language :: Python :: 3',
+          'Programming Language :: Python :: 3.3',
           'Topic :: Utilities'
       ])
