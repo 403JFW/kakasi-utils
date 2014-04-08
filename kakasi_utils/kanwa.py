@@ -23,5 +23,4 @@ class Kanwa(object):
     def _add_word(self, word):
         if word[0:2] == ';;':
             return
-        if not word in self.table:
-            self.table[word] = True
+        self.table[word] = True
