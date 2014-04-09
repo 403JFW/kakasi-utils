@@ -3,5 +3,9 @@ python:
     - "2.7"
     - "3.3"
     - "pypy"
+install:
+    - pip install coveralls
 script:
-    - python setup.py test
+    - coverage run --source=kakasi_utils setup.py test
+after_success:
+    - coveralls
