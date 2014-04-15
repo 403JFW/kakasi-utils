@@ -1,6 +1,7 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
+from __future__ import unicode_literals
 import unittest
 
 from kakasi_utils.converters import _convert_item_from_google_to_kakasi

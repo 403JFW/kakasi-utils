@@ -10,7 +10,7 @@ from kakasi_utils.kanwa import Kanwa
 
 class TestKanwa(unittest.TestCase):
     def test_merge(self):
-        u"""Test merge"""
+        """Test merge"""
         # Get dict file paths
         data_dir = os.path.dirname(os.path.realpath(__file__)) + '/'
         in_files = [
@@ -33,7 +33,7 @@ class TestKanwa(unittest.TestCase):
         os.remove(out_file)
 
     def _assert_dict_in_dict(self, file_child, file_parent):
-        u"""Assert that child dict files item in parent dict file"""
+        """Assert that child dict files item in parent dict file"""
         dict_child = self._load_dict(file_child)
         dict_parent = self._load_dict(file_parent)
         for item in dict_child.keys():
@@ -42,7 +42,7 @@ class TestKanwa(unittest.TestCase):
                     item, dict_parent))
 
     def _load_dict(self, in_dict_file, check_duplication=False):
-        u"""Load KAKASI dict file and return python dict"""
+        """Load KAKASI dict file and return python dict"""
         table = {}
         with codecs.open(in_dict_file, 'rU', 'euc_jp') as in_file:
             for line in in_file:
