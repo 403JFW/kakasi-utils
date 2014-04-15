@@ -1,0 +1,21 @@
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
+
+import argparse
+
+from kakasi_utils.converters import google_to_kakasi
+
+
+if __name__ == '__main__':
+    parser = argparse.ArgumentParser(
+        description="Convert Google Japanese Input dictionary "
+                    "to kakasi dictionary")
+    parser.add_argument(
+        'google_dict',
+        help="a input file name of Google Japanese Input dictionary")
+    parser.add_argument(
+        'kakasi_dict',
+        help="an output file name of KAKASI dictionary")
+    args = parser.parse_args()
+
+    google_to_kakasi(args.google_dict, args.kakasi_dict)
