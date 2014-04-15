@@ -13,7 +13,7 @@ setup(name='kakasi-utils',
       author_email='miyazaki.dev@gmail.com',
       url='https://github.com/403JFW/kakasi-utils',
       packages=['kakasi_utils'],
-      scripts=['scripts/pykanwa'],
+      scripts=['scripts/pykanwa', 'scripts/google2kakasi'],
       test_suite='tests',
       classifiers=[
           'Development Status :: 3 - Alpha',
@@ -27,6 +27,8 @@ setup(name='kakasi-utils',
           'Programming Language :: Python :: 2',
           'Programming Language :: Python :: 2.7',
           'Programming Language :: Python :: 3',
+          'Programming Language :: Python :: 3.2',
           'Programming Language :: Python :: 3.3',
+          'Programming Language :: Python :: Implementation :: PyPy'
           'Topic :: Utilities'
       ])
