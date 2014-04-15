@@ -7,7 +7,7 @@ except:
 
 
 setup(name='kakasi-utils',
-      version='0.1.1',
+      version='0.1.2',
       description='KAKASI Utilities',
       author='Yusuke Miyazaki',
       author_email='miyazaki.dev@gmail.com',
