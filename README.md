@@ -9,7 +9,7 @@ kakasi-utils
 
 要件
 ----
-* Python 2.7+
+* Python 2.7+, Python 3.2+ or PyPy
 * KAKASI
 
 インストール

@@ -2,3 +2,4 @@
 .coverage
 *.pyc
 *.swp
+kakasi_utils.egg-info
